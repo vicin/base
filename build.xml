@@ -1,0 +1,17 @@
+<project>
+   <property name="src.base.dir" value="src/org/vicinity/base"/>
+   <property name="dest.base.dir" value="build/base"/>
+
+   <target name="clean">
+      <delete dir="${dest.base.dir}"/>
+   </target>
+   <target name="base_compile">
+      <mkdir dir="${dest.base.dir}/classes"/>
+      <javac srcdir="${src.base.dir}" destdir="${dest.base.dir}/classes"/>
+   </target>
+   <target name="base_jar">
+   </target>
+
+
+
+</project>
